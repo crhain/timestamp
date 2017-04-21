@@ -12,7 +12,3 @@ User Story: I can pass a string as a parameter, and it will check to see whether
 User Story: If it does, it returns both the Unix timestamp and the natural language form of that date.
 
 User Story: If it does not contain a date or Unix timestamp, it returns null for those properties.
-
-Once you've finished implementing these user stories, click the "I've completed this challenge" button and enter the URLs for both your GitHub repository and your live app running on Heroku.
-
-You can get feedback on your project by sharing it with your friends on Facebook.
