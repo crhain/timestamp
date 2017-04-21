@@ -4,16 +4,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 
 app.set('port', (process.env.PORT || 5000));
 
-app.get('/', (request, response) =>{
-    let html = '';
-    html += '<!DOCTYPE html>';
-    html += '<html><body>';
-    html += '<p>Please visit /:time where :time is either a unix time '; 
-    html += 'or natural time with format Month date, year <p>';
-    html += '</body></html>';
-    response.setHeader("Content-Type", "text/html");
-    response.end(html);
-});
+app.use(express.static('public'));
 
 app.get('/:time', (request, response) => {
     var timeString = request.params.time;
