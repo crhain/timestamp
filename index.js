@@ -1,10 +1,8 @@
 const express = require('express');
-const port = +process.argv[2] || 8080;
 const app = express();
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-console.log('Starting server on port: ' + port);
-app.listen(port);
+app.set('port', (process.env.PORT || 5000));
 
 app.get('/:time', (request, response) => {
     var timeString = request.params.time;
@@ -65,3 +63,6 @@ function convertToNaturalTime(timeString){
     return naturalTime;
 }
 
+app.listen(app.get('port'), () => {
+    console.log('Node is running on port:' + app.get('port'));
+});
