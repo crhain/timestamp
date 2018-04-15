@@ -2,6 +2,7 @@
   "name": "timestamp",
   "version": "1.0.0",
   "description": "A simple timestamp api",
+  "homepage": "https://github.com/crhwebdev/timestamp#readme",
   "engines": {
     "node": "8.1.4"
   },
@@ -11,14 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crhain/timestamp.git"
+    "url": "git+https://github.com/crhwebdev/timestamp.git"
   },
   "author": "Carl Hain",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/crhain/timestamp/issues"
-  },
-  "homepage": "https://github.com/crhain/timestamp#readme",
+    "url": "https://github.com/crhwebdev/timestamp/issues"
+  },  
   "dependencies": {
     "express": "^4.15.2"
   }
